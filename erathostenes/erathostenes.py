@@ -15,8 +15,7 @@ def erathostenesSieve(n):
                 sieve[i] = False
         p += 2
     primes = list(filter(lambda x: sieve[x], range(3, n + 1, 2)))
-    primes.append(
-        2)  # 2 is the unique number which is even and prime at the same time, so I'll append the number 2 to the list
+    primes.append(2)  # 2 is the unique number which is even and prime at the same time, so I'll append the number 2 to the list
     primes.sort()
     return primes
 
